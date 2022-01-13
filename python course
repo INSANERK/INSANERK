@@ -9,5 +9,12 @@ set = {} #ANYTHING WRITTEN INSIDE CURLY BRACKETS IS CONSIDER AS SET E.G set = {2
 WHAT IS DICTIONARY?
 dict={} #ANYTHING WRITTEN INSIDE CURLY BRACKETS IS CONSIDER AS DICTIONARY + it has unique keys values  E.G dict={'hi' : 2,'to' : 3} 
 WHAT IS STRING ?
-str=''or"" #anything in quotes is consider as string in python 
-print("hello\n\tpython")#\n means new line and \t means tab 
+str =('a')or ("A") #ANYTHING IN QUOTES IS CONSIDER AS STRING 'a' or "A"
+NOW WE WRITE SOME CODES :
+print("hello python") or print("hellopython") or print('hello python') #PRINT IT AND SEE THE DIFFERENCE YOURSELF and  double quote or single quote( its your choice )
+print("hello\npython") #\n means new line 
+print('hello\spython') #\s means space 
+print('hello','python') #HERE COMMA (,) REPRESENT SPACE ,YOU WILL SEE IT WHEN YOU WRITE IT LIKE THIS ;)
+print("hello\tpython") #\t means tab 
+print("hello\n\tpython") #\n means new line and \t means tab 
+REMEBER ONE THING DONT GIVE SPACE BEFORE print()
