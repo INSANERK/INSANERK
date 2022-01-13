@@ -1,1 +1,13 @@
+BEFORE I START REMEMBER SOME POINTS.
+#hashtag or (""" """) is used to comment in python,when you run the code,your python operator will see it as comment...
+WHAT IS LIST ? 
+list = [] #ANYTHING WRITTEN INSIDE SQUARE BRACKETS IS CONSIDER AS LIST E.G list = [2eede,2]
+WHAT IS TUPLE ?
+tuple =() #ANYTHING WRITTEN INSIDE ROUND BRACKETS IS CONSIDER ASTUPLE E.G tuple = (2eede,12,23)
+WHAT IS SET ?
+set = {} #ANYTHING WRITTEN INSIDE CURLY BRACKETS IS CONSIDER AS SET E.G set = {2eede,0,1}
+WHAT IS DICTIONARY?
+dict={} #ANYTHING WRITTEN INSIDE CURLY BRACKETS IS CONSIDER AS DICTIONARY + it has unique keys values  E.G dict={'hi' : 2,'to' : 3} 
+WHAT IS STRING ?
+str=''or"" #anything in quotes is consider as string in python 
 print("hello\n\tpython")#\n means new line and \t means tab 
