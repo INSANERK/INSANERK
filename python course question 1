@@ -1,0 +1,65 @@
+                                         BEFORE I START REMEMBER SOME POINTS:
+#hashtag or (""" """) is used to comment in python,when you run the code,your python operator will see it as comment...
+WHAT IS LIST ? 
+list = [] #ANYTHING WRITTEN INSIDE SQUARE BRACKETS IS CONSIDER AS LIST E.G list = [2eede,2]
+WHAT IS TUPLE ?
+tuple =() #ANYTHING WRITTEN INSIDE ROUND BRACKETS IS CONSIDER AS TUPLE E.G tuple = (2eede,12,23)
+WHAT IS SET ?
+set = {} #ANYTHING WRITTEN INSIDE CURLY BRACKETS IS CONSIDER AS SET E.G set = {2eede,0,1}
+WHAT IS DICTIONARY?
+dict={} #ANYTHING WRITTEN INSIDE CURLY BRACKETS IS CONSIDER AS DICTIONARY + it has unique keys values  E.G dict={'hi' : 2,'to' : 3} 
+WHAT IS STRING ?
+str =('a')or ("A") #ANYTHING IN QUOTES IS CONSIDER AS STRING 'a' or "A"
+                                           NOW WE WRITE SOME CODES :
+print("hello python") or print("hellopython") or print('hello python') #PRINT IT AND SEE THE DIFFERENCE YOURSELF and  double quote or single quote( its your choice )
+print("hello\npython") #\n means new line 
+print('hello\spython') #\s means space 
+print('hello','python') #HERE COMMA (,) REPRESENT SPACE ,YOU WILL SEE IT WHEN YOU WRITE IT LIKE THIS ;)
+print("hello\tpython") #\t means tab 
+print("hello\n\tpython") #\n means new line and \t means tab 
+                                            LET DO SOME QUESTIONS :
+                                            
+QUESTION 1. Execution of expressions involving arithmetic, relational, logical, and bitwise operators in the shell window of Python IDLE .
+
+                                       Python Arithmetic Operators
+As the name suggests, Arithmetic Operators are used in Arithmetic (Mathematics) operations.
+
+Let’s assume following two variables:
+
+x = 5
+y = 2
+Operator	Name & Meaning	Example & Result
++	Addition: Add two operands or unary plus	x + y = 7
+–	Subtraction: Subtract right operand from the left	x – y = 3
+*	Multiplication: Multiplies two operands	x * y = 10
+/	Division: Divides left operand by the right one	x / y = 2.5
+%	Modulus – Takes the remainder	x % y = 1
+//	Floor division: Division that results into the whole number truncating digits after decimal point	x // y = 2
+**	Exponent – left operand raised to the power of right	x**y (5^2) = 25 
+
+                                    Python Relational Operator or Comparison Operator
+Relational or Comparison Operators are used to compare the operands on the either side of them.
+Operator	Meaning
+>	Greater than: Eg. x > y will return true if x is greater than y
+<	Less than: Eg. x < y will return true if x is less than y
+==	Equal to: Eg. x == y will return true if x is equal to y
+!=	Not equal to:eg x != y  will return true 
+>=	Greater Than or Equal to: Eg. x >= y will return true if x is greater than or equal to y
+<=	Less Than or Equal to: Eg. x <= y will return true if x is less than or equal to y
+                                         examples 
+x=4
+y=6
+x>y # check if x is greater than y
+x<y # check if x is less than y
+x==y # if x is equal to y
+x != y # if x is not equal to y  
+x >= y # if x is greater than or equal to y   
+x <= #  if x is less than or equal to y
+
+                                Python Logical Operators
+There are three Python logical operators: and or and not.
+
+Operator	Meaning
+and	(x and y) will return true if x and y both are true
+or	(x or y) will return true if either of x or y is true
+not	(not x) will return true if x is false or will return false if x is true. not reverses or complements the operands
