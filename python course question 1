@@ -63,3 +63,9 @@ Operator	Meaning
 and	(x and y) will return true if x and y both are true
 or	(x or y) will return true if either of x or y is true
 not	(not x) will return true if x is false or will return false if x is true. not reverses or complements the operands
+                                                           examples
+x=1
+y=2
+x>2 and y>1 # to get true both condition must be true
+x>2 or y>1 # to get true either of x or y must be true
+not x<2 # x is less than 2 , which is true , but not will make it false 
