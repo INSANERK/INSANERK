@@ -1,0 +1,17 @@
+ Write a Python function to produce the outputs such as:
+(a) 1
+21
+ 321
+4321
+b) 1
+ 121
+ 12321
+1234321
+ 12321
+ 121
+ 1
+                                python code : 
+(a) print('1\n21\n321\n4321')
+(b)print('1\n121\n12321\n1234321\n12321\n121\n1')
+                             
+                                
