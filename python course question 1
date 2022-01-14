@@ -68,4 +68,17 @@ x=1
 y=2
 x>2 and y>1 # to get true both condition must be true
 x>2 or y>1 # to get true either of x or y must be true
-not x<2 # x is less than 2 , which is true , but not will make it false 
+not x<2 # x is less than 2 , which is true , but not will make it false .
+
+                                             Python Assignment Operators
+As simple as it sounds assignment operators are used for assigning values to variables.
+
+Operator	Example 	         Meaning
+=       	x = 1          	Assigns 1 to x
++=	      x += 1	          x = x + 1
+-=	      x -= 1          	x = x – 1
+/=	      x /= 1	          x = x / 1
+%=	      x %= 1	          x = x % 1
+*=      	x *= 1	          x = x * 1
+**=	      x **= 1         	x= x ** 1
+//=	x //= 1	x = x // 1
