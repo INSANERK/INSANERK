@@ -13,5 +13,5 @@ b) 1
                                 python code : 
 (a) print('1\n21\n321\n4321')
 (b)print('1\n121\n12321\n1234321\n12321\n121\n1')
-                             
+  # " \n ” indicates that the line ends here and the remaining characters would be displayed in a new line                           
                                 
