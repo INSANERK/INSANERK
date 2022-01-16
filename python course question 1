@@ -20,7 +20,7 @@ print("hello\n\tpython") #\n means new line and \t means tab
                                             LET DO SOME QUESTIONS :
                                             
 QUESTION 1. Execution of expressions involving arithmetic, relational, logical, and bitwise operators in the shell window of Python IDLE .
-
+                                              solution :
                                        Python Arithmetic Operators
 As the name suggests, Arithmetic Operators are used in Arithmetic (Mathematics) operations.
 
