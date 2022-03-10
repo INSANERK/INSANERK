@@ -1,1 +1,1 @@
-we do some college python questions here  :
+we do some python questions here  :
