@@ -1,0 +1,254 @@
+Question17. Write a function called “check_duplicates” that takes a list and returns true if there is any element that appears more than once. Also find the frequency of that element. The original list should not be modified.
+
+Question18. Write a program to implement a class for finding area and perimeter of a rectangle. Write constructor, destructor, and functions for calculating area and perimeter.
+
+Question19. Write a menu driven program to perform the following functions on strings: a. Find the length of string b. Return maximum of three strings c. Accept a string and replace every successive character with ‘#’ ExampleFor Given string ‘Hello World’ returned string is ‘H#l#o W#r#d’. d. Find number of words in the given string
+
+Question20. Write a Python program to perform the following using list: a. Check if all elements in list are numbers or not b. If it is a numeric list, then count number of odd values in it c. If list contains all Strings, then display largest String in the list d. Display list in reverse form e. Find a specified element in list f. Remove the specified element
+
+Question21. Usage of Python debugger tool-pydb and PythonTutor.
+
+Question22. Implementation of Linear and binary search techniques
+
+Question23. Implementation of selection sort, insertion sort, and bubble sort techniques
+                                                code:
+#QUESTION 17                            
+
+def check_duplicate(l):
+    l2={}
+    for i in l:
+        if i in l2:
+            l2[i]+=l
+        else:
+            l2[i]=l
+        for i in l:
+            if l2[i]>l:
+                print('True',i,l2[i])
+def main():
+    n=int(input('enter no. of elements:'))
+    l=[]
+    for i in range(n):
+        ele=int(input())
+        l.append(ele)
+print('original list',l)
+check_duplicate
+if __name__=='__main__':
+    main()
+
+                            
+#QUESTION 18
+                            
+class rectangle():
+    def __init__(self,l,b):
+        self.l=l
+        self.b=b
+    def area(self):
+        return self.l*self.b
+    def perimeter(self):
+        print('destructor call!!')
+x=int(input('enter length:'))
+y=int(input('enter breadth:'))
+a=rectangle(x,y)
+print('area of rectangle is:',a.area())
+print('perimeter of rectangle is:',a.perimeter())
+
+                            
+#QUESTION 19
+                            
+def main():
+    ch=int(input('Enter 1-length , 2=max of 3 strings,3=to print , 4=number of words='))
+    if ch==1:
+        n=input('Enter a string:')
+        l=len(n)
+        print('The length of the string is=',l)
+    elif ch==2:
+        n1=input('Enter string 1=')
+        n2=input('Enter string 2=')
+        n3=input('Enter string 3=')
+        print('The maximum of the 3 strings is=',max(n1,n2,n3))
+    elif ch==3:
+        a=input('Enter a string:')
+        s=''
+        a=list(a)
+        for i in range(len(a)):
+            if (i%2!=0):
+                if a[i]==' ':
+                    a[i]=' '
+                else:
+                    a[i]='#'
+        for e in a:
+            s=s+e
+        print('the new string=',s)    
+    elif ch==4:
+         b=input('Enter a string=')
+        c=0
+        for ch in b:
+            if ch==' ':
+                c+=1
+        a=c+1
+        print('The number of words:',a)
+    else:
+        print('invalid choice') 
+if __name__=='__main__':
+    main()
+
+                            
+#QUESTION 20
+                            
+def inList():                                                                                                                                                                                                    
+    num = input("Enter input :   ").split()
+    n = list(num)
+    for i in n:
+        if not i.isdigit():
+            print('not no.')
+            break
+        else:
+            print('all are number')
+            r = list(map (int,input('Enter input again :  ').split()))
+            oddNo = 0
+            for i in r:
+                if (i % 2) != 0:
+                    oddNo += 1
+            print('Total odd no in the list is:', oddNo)
+            break
+    for i in n:
+        if i.isalpha():
+            print('The largest string is:   ', max(n))
+# for reversing the input string
+            h = n[-1::-1]
+            print("The reverse of input list is  ",h)
+# to find if the entered element is present in the input string
+            found=input('Enter the element:  ')
+            def findEle():
+                for i in num:
+                    if i == found:
+                        print('Element found')
+                        break
+            findEle()
+# to remove an element from the input string
+            def delEle():
+                k = found
+                str = []
+                for i in num:
+                    if i != k:
+                        str.append(i)
+                print ('Element',k,'" Deleted ')
+# to print updated list
+                print('Updated list',str)
+            delEle()
+            break
+inList()
+
+                            
+#QUESTION 22
+                            
+#BINARY SEARCH
+                            
+def binarySearchAppr (arr,start, end, x):
+    if end >= start:
+        mid =start + (end- start)//2
+    # If element is present at the middle
+        if arr[mid] == x:
+            return mid
+   # If element is smaller than mid
+        elif arr[mid] > x:
+            return binarySearchAppr(arr, start, mid-1, x)
+   # Else the element greator than mid
+        else:
+            return binarySearchAppr(arr, mid+1, end, x)
+    else:
+   # Element is not found in the array
+      return -1
+arr = [2,3,4,10,40]
+x =10
+result = binarySearchAppr(arr, 0, len(arr)-1, x)
+if result != -1:
+   print ("Element is present at index "+str(result))
+else:
+    print ("Element is not present in array")
+
+#LINEAR SEARCH
+                            
+def search(arr,x):    
+    for i in range(len(arr)):
+        if arr[i]==x:
+            return i        
+         return -1
+def main():
+    n=int(input('enter no. of elements to be inserted:'))
+    arr=[]
+    for i in range(n):
+        ele=int(input('enter elements:'))
+        arr.append(ele)
+    print(arr)
+    x=int(input('enter value to be searched:'))
+    result=search(arr,x)
+    print(x,'found at index',result)
+if __name__=='__main__':
+    main()
+                            
+                            
+#QUESTION 23
+                            
+#SELECTION SORT
+      
+def selectSort(arr):
+    for i in range(len(arr)):
+        print(arr)
+        minValue=min(arr[i:])
+        minInd=arr.index(minValue)
+        arr[i],arr[minInd]=arr[minInd],arr[i]
+def main():
+    arr=[]
+    n=int(input('enter no. of elements:'))
+    for i in range (n):
+        ele=int(input())
+        arr.append(ele)
+    print('final arr to use selection sort is:',arr)
+    selectSort(arr)
+    print('sorted sum is:',arr)
+if _name=='main_':
+    main()
+                            
+#INSERTION SORT
+
+def insertion(arr):
+    for i in range(1,len(arr)):
+        key=arr[i]
+        j=i-1
+        while j>=0 and key<arr[j]:
+            arr[j+1]=arr[j]
+            j=j-1
+            arr[j+1]=key
+            print(arr)
+def main():
+    arr=[]
+    n=int(input('enter no. of elemenets:'))
+    for i in range(n):
+        ele=int(input())
+        arr.append(ele)
+    print('final arr to use insertion sort is:',arr)
+    insertion(arr)
+    print('sorted sum is',arr)
+if _name=='main_':
+    main()
+                            
+#BUBBLE SORT
+                            
+def bubbleSort(arr):
+    for i in range (len(arr)-1,0,-1):
+        for j in range(i):
+            print(arr)
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+def main():
+    arr=[]
+    n=int(input('enter no. of elementes:'))
+    for i in range(n):
+        ele=int(input())
+        arr.append(ele)
+    print('final array to use bubble sort is is:',arr)
+    bubbleSort(arr)
+    print('sorted sum is:',arr)
+if _name=='main_':
+    main()                                                           
