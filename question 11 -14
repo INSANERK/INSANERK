@@ -1,0 +1,57 @@
+Question11. Write a function that takes a number as an input and determine whether it is prime or not.
+
+Question12. Write a function that finds the sum of the a) first n odd terms b) first n even terms c) 1, 2, 4, 3, 5, 7, 9, 6, 8, 10, 11, 13.. till n-th term
+
+Question13. Write a Python function that takes a string as an input from the user and determines whether it is palindrome or not.
+
+Question14. Write a function that takes a sentence as input from the user and calculates the frequency of each letter. Use a variable of dictionary type to maintain the count.
+                                                          code :
+#QUESTION 11
+                            
+def prime(n):
+    if n==1:
+        return False
+    for i in range(2,n):
+        if n%i==0:
+            return False
+            break
+    else:
+        return True
+    return prime(n)
+def main():
+    n=int(input('enter no.:'))
+    result=prime(n)
+    if result==True:
+        print(n,'is a prime no.')
+    else:
+        print(n,'is not a prime no.')
+if __name__=='__main__':
+    main()
+
+                           
+#QUESTION 12
+                            
+def main():
+    a=input('enter a string:')
+    b=a[-1::-1]
+    if(a==b):
+        print('palindrome string')
+    else:
+        print('not palindrome')
+if __name__=='__main__':
+    main()
+
+                            
+ #QUESTION 14
+                            
+ def main():
+    text = input('Enter a sentence:')
+    freq = {}
+    for i in text:
+        if i in freq:
+            freq[i] += 1
+        else:
+            freq[i] = 1
+    print("Frequency of each letter are as follows:", freq)
+if __name__=='__main__':
+    main()
