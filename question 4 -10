@@ -1,0 +1,144 @@
+Question4. Write a Python program to produce a table of sins, cosines and tangents. Make a variable x in range from 0 to 10 in steps of 0.2. For each value of x, print thevalue of sin(x), cos(x) and tan(x).
+
+Question5. Write a program that reads an integer value and prints “leap year” or “not a leap year”
+
+Question6. Write a menu driven program to calculate the area of given building. Accept suitable inputs and use suitable assertions.
+
+Question7. Write a Python function that takes a number as an input from the user and computes its factorial.
+
+Question8. Write a Python function to generate the Fibonacci sequence till a given number “n”.
+
+Question9. Write a function that takes a number as an input and finds its reverse and computes the sum of its digits.
+
+Question10. Write a function that takes two numbers as input parameters and returns their least common multiple.
+
+Question11. Write a function that takes a number as an input and determine whether it is prime or not.
+
+Question12. Write a function that finds the sum of the a) first n odd terms b) first n even terms c) 1, 2, 4, 3, 5, 7, 9, 6, 8, 10, 11, 13.. till n-th term
+
+Question13. Write a Python function that takes a string as an input from the user and determines whether it is palindrome or not.
+
+Question14. Write a function that takes a sentence as input from the user and calculates the frequency of each letter. Use a variable of dictionary type to maintain the count.
+                                                                   code : 
+                                                                   #QUESTION 4
+
+import math
+def func():
+    print('table of sin in the range of 0-10 with increament of 0.2')
+    for x in range(0,10):
+        print(math.sin(x))
+        x=x+0.2
+    print()
+    print('table of cos')
+   
+    for x in range(0,10):
+        print(math.cos(x))
+        x=x+0.2
+    print()
+    print('table of tan')
+    
+    for x in range(0,10):
+        print(math.tan(x))
+        x=x+0.2
+    print()
+func()
+
+
+#QUESTION 5
+
+def main():
+    year=int(input('\nenter year to check it is leap year or not'))
+    if (year%4)==0:
+       if (year%100)==0:
+          if (year%400)==0:
+           print('*\nIT IS A LEAP YEAR*')
+          else:
+              print('*\nIT IA NOT A LEAP YEAR*')
+       else:
+          print('*\nIT IS NOT LEAP YEAR*')
+    else:
+        print('*\nIT IS NOT A LEAP YEAR*')
+if __name__=='__main__':
+    main()
+
+    
+#QUESTION 6
+
+def main():
+    choice = int(input('Enter 1 to calculate area of building'))
+    if choice == 1:
+        length = float(input('Enter length of building :'))
+        breadth = float(input('Enter breadth of building :'))
+        area_building = area(length, breadth)
+        print(' Area of building is =', area_building)
+    else:
+        print('Invalid choice')
+if __name__=='__main__':
+    main()
+
+
+#QUESTION 7
+
+def fact(n):
+    if n==0:
+        return 1
+    return n*fact(n-1)
+def main():
+    n=int(input('enter a no.:'))
+    print('factorial of a no. is:',fact(n))
+if __name__=='__main__':
+    main()
+
+    
+#QUESTION 8
+
+def main():
+  n=int(input('enter no.:'))
+  x=0
+  y=1
+  z=0
+  while(z<=n):
+    print(z)
+    x=y
+    y=z
+    z=x+y
+if __name__=='__main__':
+    main()
+
+    
+#QUESTION 9
+
+def main():
+    n = int(input("Enter a positive integer:"))
+    r, s =0, 0
+    while(n>0):
+        rem = n % 10
+        r = (r*10) + rem
+        n = n//10
+    print('Reverse of a number =', r)
+    while (r>0) :
+        a = r % 10
+        s+=a
+        r=r//10
+    print('Sum of the reversed number =',s)
+if __name__=='__main__':
+    main()
+
+
+#QUESTION 10
+
+def main():
+        n1=int(input(‘Enter first number:’))
+       n2=int(input(‘Enter second number:’))
+        if(n1&gt;n2):
+          g=n1
+    else:
+         g=n2
+         while(True):
+                  if ((g%n1==0)and (g%n2==0)):
+                      lcm=g
+                      print(&#39;Least common multiple=&#39;,lcm)
+                     break
+        g+=1   
+if __name__==’__main__’:
+main()
